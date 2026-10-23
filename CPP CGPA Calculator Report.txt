@@ -1,0 +1,35 @@
+My Program Report: Academic GPA and CGPA Calculator
+
+1. Libraries and Preprocessors
+<iostream>: Essential input/output stream library used for handling standard console input (cin) and output (cout).
+
+<string>: It enables the use of the std::string data class to handle course titles containing spaces (via getline).
+
+<iomanip>: It provides formatting manipulators like fixed and setprecision(2) to control decimal places in GPA outputs.
+
+<vector>: It is used for dynamic array management (vector<Course>), replacing fixed-size arrays to safely handle variable course counts.
+
+<limits>: It provides std::numeric_limits to clear input streams and recover gracefully when users enter invalid data types (e.g., text instead of numbers).
+
+2. Function Breakdown
+getValidIntInput(string prompt, int min, int max): It prompts the user for an integer, checks for stream failures (wrong data types), validates the integer range, and clears the input buffer if an error occurs.
+
+getValidDoubleInput(string prompt, double min, double max): It validates floating-point inputs (like scores and grade points) against designated bounds and handles type errors safely.
+
+assignGradeAndPoint(Course &c): It takes a course reference, evaluates its numerical score against institutional grade thresholds, and assigns the appropriate letter grade (A, B, C, D, E, F) and corresponding grade point.
+
+CalculateGPA(double totalcreditpoints, int totalcredithours): It computes the current semester's GPA by dividing total quality points by total credit hours.
+
+CalculateCGPA(double prev_credit_points, double totalcreditpoints, int prev_credit_hours, int totalcredithours): It computes the cumulative GPA by combining previous academic records with current semester totals.
+
+
+3. Result of Output
+Upon successful execution and data entry, the program generates a formatted console report containing:
+
+Semester Metrics: Total credit hours registered and calculated semester GPA.
+
+Cumulative Standing: The final calculated Cumulative Grade Point Average (CGPA).
+
+Course Breakdown: A structured list displaying each course title, raw score, credit hours earned, assigned grade point, and letter grade.
+
+Degree Classification: The final university degree class (e.g., First Class, Second Class Upper, etc.) determined automatically by evaluating the final CGPA.
