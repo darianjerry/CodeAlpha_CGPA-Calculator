@@ -1,7 +1,7 @@
 # CodeAlpha_CGPA-Calculator
 # C++ Academic GPA & CGPA Calculator 🎓
 
-A robust, console-based academic tracking utility built in C++. Designed for undergraduate students to accurately compute semester GPAs, track cumulative GPAs (CGPA), and evaluate degree classifications with built-in error handling and input validation.
+A console-based academic tracking utility built in C++. Designed for undergraduate students to accurately compute semester GPAs, track cumulative GPAs (CGPA), and evaluate degree classifications with built-in error handling and input validation.
 
 ## 🚀 Features
 
